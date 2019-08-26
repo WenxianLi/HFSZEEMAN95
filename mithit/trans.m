@@ -2,7 +2,7 @@
 %                                                                                                %
 %                                                                                                %
 
- function [AM_Mall,n] = trans(name_i,name_f)
+ function [AM_Mall,n] = trans(name_i,name_f,relcalc,ITtype,JE_i,FE_i,JE_f,FE_f,Bmax,EM_i,EM_f,Parity_i,Parity_f,UNITB,I,mu,Q,Ttype)
 
 %                                                                                                %
 % This function opens the file <name1>.<name2>.(c)t and reads the reduced transition matrix.     % 
@@ -15,8 +15,6 @@
 %                                                                                                %
 % This m-file calls for: mtrans.m                                                                % 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-global relcalc ITtype JE_i FE_i JE_f FE_f Bmax EM_i EM_f Parity_i Parity_f UNITB I mu Q Ttype
 
 % Open and read transition data from file <name_i>.<name_j>.ct
 rightansw = 0;

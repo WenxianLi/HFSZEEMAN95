@@ -47,8 +47,6 @@ format long
 name_i = input("Name of the Initial state:   ",'s');
 name_f = input("\nName of the Final state:   ",'s');
 
-global relcalc I mu Q UNITB Bmax UNITE ITtype JE_i FE_i JE_f FE_f EM_i EM_f Ttype Parity_i Parity_f N_plots
-
 relcalc = input("\nAre the calculations based on a relativistic CI calculation? (Y/N) ",'s');
 
 if (relcalc ~= 'y' & relcalc ~= 'Y' & relcalc ~= 'n' & relcalc ~= 'N' )
@@ -99,13 +97,13 @@ N_plots=0;
 display(' ')
 display('Start Computation of Energies and Mixing Coefficients')
 display('of the Magnetic Sublevels of Initial States')
-plothfszeeman(name_i);
+plothfszeeman(name_i,relcalc,I,mu,Q,UNITB,Bmax,UNITE,ITtype,N_plots);
 
 if ~(strcmp(name_i,name_f))
   display(' ')
   display('Start Computation of Energies and Mixing Coefficients')
   display('of the Magnetic Sublevels of Final States')
-  plothfszeeman(name_f);
+  plothfszeeman(name_f,relcalc,I,mu,Q,UNITB,Bmax,UNITE,ITtype,N_plots);
 end
 %End compute
 
@@ -114,8 +112,8 @@ Transition = input("\nWould you like to compute the transition rates? (Y/N)  ", 
 if (Transition == 'y' | Transition == 'Y')
   
   %Read energies and mixing coefficients of the magnetic sublevels
-  [N_eigvec_i,JE_i,FE_i,B_i,unitB_i,EM_i,Parity_i] = mixingC(name_i);
-  [N_eigvec_f,JE_f,FE_f,B_f,unitB_f,EM_f,Parity_f] = mixingC(name_f);
+  [N_eigvec_i,JE_i,FE_i,B_i,unitB_i,EM_i,Parity_i] = mixingC(name_i,relcalc,ITtype,I);
+  [N_eigvec_f,JE_f,FE_f,B_f,unitB_f,EM_f,Parity_f] = mixingC(name_f,relcalc,ITtype,I);
 
   %End read data
   %Define transition type
@@ -126,7 +124,7 @@ if (Transition == 'y' | Transition == 'Y')
   end
   %End define
 
-  [AM_Mall,n]=trans(name_i,name_f);
+  [AM_Mall,n]=trans(name_i,name_f,relcalc,ITtype,JE_i,FE_i,JE_f,FE_f,Bmax,EM_i,EM_f,Parity_i,Parity_f,UNITB,I,mu,Q,Ttype);
 
   %plot spectra
   %synthetic spectra

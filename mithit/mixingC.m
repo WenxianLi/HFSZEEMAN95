@@ -2,7 +2,7 @@
 %                                                                                                %
 %                                                                                                %
 
-function [N_eigvec,JE,FE,B,unitB,EM,Parity] = mixingC(name)
+function [N_eigvec,JE,FE,B,unitB,EM,Parity] = mixingC(name,relcalc,ITtype,I)
 
 %                                                                                                %
 % This function is to read eigenvectors and mixing coefficients from <name>.(c)gjhfs             % 
@@ -12,7 +12,6 @@ function [N_eigvec,JE,FE,B,unitB,EM,Parity] = mixingC(name)
 %                                                                                                %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   
-global relcalc I ITtype                                                              
 
 % Read Breit-Pauli energy levels                                          
 rightansw = 0;

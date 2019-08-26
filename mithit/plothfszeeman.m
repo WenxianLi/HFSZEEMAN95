@@ -2,7 +2,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                                                                          %% 
 
-function plothfszeeman(name)
+function plothfszeeman(name,relcalc,I,mu,Q,UNITB,Bmax,UNITE,ITtype,N_plots)
 
 %%  Written by: Martin Andersson and Per J\"onsson, july 2006               %%
 %%  Modified by: Wenxian Li, March 2018                                     %%
@@ -72,8 +72,6 @@ function plothfszeeman(name)
 
 format long
 warning('off', 'all');
-
-global relcalc I mu Q UNITB Bmax UNITE ITtype N_plots
 
 % Open and read data from file <name>.gjhfs or <name>.cgjhfs
 if (relcalc == 'y' | relcalc == 'Y')
