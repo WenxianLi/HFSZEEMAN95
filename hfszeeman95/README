@@ -1,0 +1,5 @@
+1.Copy this folder (hfszeeman) to grasp directory: ${GRASP}/src/appl/
+2.Change to the ${GRASP}/src/appl/hfszeeman directory and modify the Makefile to your grasp directory
+3.issue the make command
+4.If the compilation and linking is successful the executable (hfszeeman) will
+automatically be transfered to the ${GRASP}/bin directory

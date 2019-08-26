@@ -1,0 +1,233 @@
+Session log for computing the hyperfine-induced transition rate 
+4s4d 3D2 -- 4s4f 3F2,3 between hyperfine levels for ^{69}Ga and ^{71}Ga.
+
+>> MitHit
+Name of the Initial state:   
+>> even
+Name of the Final state:   
+>> odd
+Are the calculations based on a relativistic CI calculation? (Y/N) 
+>> y
+MIT-fs(0), HIT(1) or MIT-hfs(2):  
+>> 1
+Nuclear spin I: 
+>> 1.5
+Nuclear magnetic dipole moment mu:  
+>> 2.01659
+Nuclear electric quadrupole moment Q:   
+>> 0.168
+Start Computation of Energies and Mixing Coefficients
+of the Magnetic Sublevels of Initial States
+ 
+level    E_hfs (a.u.)   FS-LEV    J      F 
+-----------------------------------------------
+ 1      -1941.859776030    1     3     9/2  
+ 2      -1941.859963318    2     2     7/2  
+ 3      -1941.859777494    1     3     7/2  
+ 4      -1941.803714308    3     2     7/2  
+ 5      -1941.860084911    4     1     5/2  
+ 6      -1941.859963893    2     2     5/2  
+ 7      -1941.859778638    1     3     5/2  
+ 8      -1941.803714481    3     2     5/2  
+ 9      -1941.860083718    4     1     3/2  
+10      -1941.859964317    2     2     3/2  
+11      -1941.859779458    1     3     3/2  
+12      -1941.803714594    3     2     3/2  
+13      -1941.860082993    4     1     1/2  
+14      -1941.859964577    2     2     1/2  
+15      -1941.803714658    3     2     1/2  
+ 
+Finished even
+ 
+Start Computation of Energies and Mixing Coefficients
+of the Magnetic Sublevels of Final States
+ 
+level    E_hfs (a.u.)   FS-LEV    J      F 
+-----------------------------------------------
+ 1      -1941.752900396    1     4    11/2  
+ 2      -1941.752931183    2     3     9/2  
+ 3      -1941.752901689    1     4     9/2  
+ 4      -1941.752887403    3     3     9/2  
+ 5      -1941.752936707    4     2     7/2  
+ 6      -1941.752930234    2     3     7/2  
+ 7      -1941.752902815    1     4     7/2  
+ 8      -1941.752888618    3     3     7/2  
+ 9      -1941.752935538    4     2     5/2  
+10      -1941.752929487    2     3     5/2  
+11      -1941.752903741    1     4     5/2  
+12      -1941.752889614    3     3     5/2  
+13      -1941.752934639    4     2     3/2  
+14      -1941.752928957    2     3     3/2  
+15      -1941.752890356    3     3     3/2  
+16      -1941.752934067    4     2     1/2  
+ 
+Finished odd
+ 
+Would you like to compute the transition rates? (Y/N)   
+>> y
+ 
+level    E_hfs (a.u.)     FS-LEV        J           F
+------------------------------------------------------------
+Initial levels:
+ 1    -1941.859776030       1             3            9/2     
+ 2    -1941.859777494       1             3            7/2     
+ 3    -1941.859778638       1             3            5/2     
+ 4    -1941.859779458       1             3            3/2     
+ 5    -1941.859963318       2             2            7/2     
+ 6    -1941.859963893       2             2            5/2     
+ 7    -1941.859964317       2             2            3/2     
+ 8    -1941.859964577       2             2            1/2     
+ 9    -1941.803714308       3             2            7/2     
+10    -1941.803714481       3             2            5/2     
+11    -1941.803714594       3             2            3/2     
+12    -1941.803714658       3             2            1/2     
+13    -1941.860084911       4             1            5/2     
+14    -1941.860083718       4             1            3/2     
+15    -1941.860082993       4             1            1/2     
+ 
+Final levels:
+ 1    -1941.752900396       1             4           11/2     
+ 2    -1941.752901689       1             4            9/2     
+ 3    -1941.752902815       1             4            7/2     
+ 4    -1941.752903741       1             4            5/2     
+ 5    -1941.752931183       2             3            9/2     
+ 6    -1941.752930234       2             3            7/2     
+ 7    -1941.752929487       2             3            5/2     
+ 8    -1941.752928957       2             3            3/2     
+ 9    -1941.752887403       3             3            9/2     
+10    -1941.752888618       3             3            7/2     
+11    -1941.752889614       3             3            5/2     
+12    -1941.752890356       3             3            3/2     
+13    -1941.752936707       4             2            7/2     
+14    -1941.752935538       4             2            5/2     
+15    -1941.752934639       4             2            3/2     
+16    -1941.752934067       4             2            1/2     
+
+Give an index vector of the initial levels(lower level):  
+>> [5,6,7,8]
+Give an index vector of the final levels(upper level):  
+>> [5,6,7,8,13,14,15,16]
+Would you like a plot of synthetic spectra? (Y/N)  
+>> n
+
+MitHit finished
+
+Copy the A(F-F'), E and F' results of 69Ga in even.odd.hit.trans file to
+Ga_spectra.m
+
+Computation of hyperfine-induced transition for 71Ga:
+>> MitHit
+Name of the Initial state:   
+>> even
+Name of the Final state:   
+>> odd
+Are the calculations based on a relativistic CI calculation? (Y/N) 
+>> y
+MIT-fs(0), HIT(1) or MIT-hfs(2):  
+>> 1
+Nuclear spin I: 
+>> 1.5
+Nuclear magnetic dipole moment mu:  
+>> 2.56227
+Nuclear electric quadrupole moment Q:   
+>> 0.106
+Start Computation of Energies and Mixing Coefficients
+of the Magnetic Sublevels of Initial States
+ 
+level    E_hfs (a.u.)   FS-LEV    J      F 
+-----------------------------------------------
+ 1      -1941.859776030    1     3     9/2  
+ 2      -1941.859963318    2     2     7/2  
+ 3      -1941.859777494    1     3     7/2  
+ 4      -1941.803714308    3     2     7/2  
+ 5      -1941.860084911    4     1     5/2  
+ 6      -1941.859963893    2     2     5/2  
+ 7      -1941.859778638    1     3     5/2  
+ 8      -1941.803714481    3     2     5/2  
+ 9      -1941.860083718    4     1     3/2  
+10      -1941.859964317    2     2     3/2  
+11      -1941.859779458    1     3     3/2  
+12      -1941.803714594    3     2     3/2  
+13      -1941.860082993    4     1     1/2  
+14      -1941.859964577    2     2     1/2  
+15      -1941.803714658    3     2     1/2  
+ 
+Finished even
+ 
+Start Computation of Energies and Mixing Coefficients
+of the Magnetic Sublevels of Final States
+ 
+level    E_hfs (a.u.)   FS-LEV    J      F 
+-----------------------------------------------
+ 1      -1941.752900396    1     4    11/2  
+ 2      -1941.752931183    2     3     9/2  
+ 3      -1941.752901689    1     4     9/2  
+ 4      -1941.752887403    3     3     9/2  
+ 5      -1941.752936707    4     2     7/2  
+ 6      -1941.752930234    2     3     7/2  
+ 7      -1941.752902815    1     4     7/2  
+ 8      -1941.752888618    3     3     7/2  
+ 9      -1941.752935538    4     2     5/2  
+10      -1941.752929487    2     3     5/2  
+11      -1941.752903741    1     4     5/2  
+12      -1941.752889614    3     3     5/2  
+13      -1941.752934639    4     2     3/2  
+14      -1941.752928957    2     3     3/2  
+15      -1941.752890356    3     3     3/2  
+16      -1941.752934067    4     2     1/2  
+ 
+Finished odd
+ 
+Would you like to compute the transition rates? (Y/N)   
+>> y
+ 
+level    E_hfs (a.u.)     FS-LEV        J           F
+------------------------------------------------------------
+Initial levels:
+ 1    -1941.859776030       1             3            9/2     
+ 2    -1941.859777494       1             3            7/2     
+ 3    -1941.859778638       1             3            5/2     
+ 4    -1941.859779458       1             3            3/2     
+ 5    -1941.859963318       2             2            7/2     
+ 6    -1941.859963893       2             2            5/2     
+ 7    -1941.859964317       2             2            3/2     
+ 8    -1941.859964577       2             2            1/2     
+ 9    -1941.803714308       3             2            7/2     
+10    -1941.803714481       3             2            5/2     
+11    -1941.803714594       3             2            3/2     
+12    -1941.803714658       3             2            1/2     
+13    -1941.860084911       4             1            5/2     
+14    -1941.860083718       4             1            3/2     
+15    -1941.860082993       4             1            1/2     
+ 
+Final levels:
+ 1    -1941.752900396       1             4           11/2     
+ 2    -1941.752901689       1             4            9/2     
+ 3    -1941.752902815       1             4            7/2     
+ 4    -1941.752903741       1             4            5/2     
+ 5    -1941.752931183       2             3            9/2     
+ 6    -1941.752930234       2             3            7/2     
+ 7    -1941.752929487       2             3            5/2     
+ 8    -1941.752928957       2             3            3/2     
+ 9    -1941.752887403       3             3            9/2     
+10    -1941.752888618       3             3            7/2     
+11    -1941.752889614       3             3            5/2     
+12    -1941.752890356       3             3            3/2     
+13    -1941.752936707       4             2            7/2     
+14    -1941.752935538       4             2            5/2     
+15    -1941.752934639       4             2            3/2     
+16    -1941.752934067       4             2            1/2     
+
+Give an index vector of the initial levels(lower level):  
+>> [5,6,7,8]
+Give an index vector of the final levels(upper level):  
+>> [5,6,7,8,13,14,15,16]
+Would you like a plot of synthetic spectra? (Y/N)  
+>> n
+
+MitHit finished
+
+Copy the A(F-F'), E and F' results of 71Ga in even.odd.hit.trans file to
+Ga_spectra.m
+
+Run Ga_spectra.m

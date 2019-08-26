@@ -1,0 +1,101 @@
+>> mithit
+Name of the Initial state:   
+>> HeI_1snf
+Name of the Final state:   
+>> HeI_1snf
+Are the calculations based on a relativistic CI calculation? (Y/N) 
+>> y
+MIT-fs(0), HIT(1) or MIT-hfs(2):  
+>> 0
+B-field in Tesla (0) or Gauss (1):  
+>> 1
+Give the upper limit for the B-field:  
+>> 500
+Energies in a.u. (0), cm-1 (1) or MHz (2) ? 
+>> 1
+Start Computation of Energies and Mixing Coefficients
+of the Magnetic Sublevels of Initial States
+level    E_fs (a.u.)     J 
+-----------------------------------------------
+ 1      -2.013995830     6  
+ 2      -2.010311021     6  
+ 3      -2.007919438     6  
+ 4      -2.013995835     5  
+ 5      -2.013995822     5  
+ 6      -2.010311024     5  
+ 7      -2.010311016     5  
+ 8      -2.007919440     5  
+ 9      -2.007919434     5  
+10      -2.031357008     4  
+11      -2.020106989     4  
+12      -2.013995864     4  
+13      -2.013995826     4  
+14      -2.010311044     4  
+15      -2.010311018     4  
+16      -2.007919436     4  
+17      -2.007919436     4  
+18      -2.031357041     3  
+19      -2.031356934     3  
+20      -2.020107003     3  
+21      -2.020106946     3  
+22      -2.013995868     3  
+23      -2.013995824     3  
+24      -2.010311046     3  
+25      -2.010311016     3  
+26      -2.007919437     3  
+27      -2.007919416     3  
+28      -2.131227905     2  
+29      -2.057609689     2  
+30      -2.032188981     2  
+31      -2.031356969     2  
+32      -2.020533587     2  
+33      -2.020106969     2  
+34      -2.014242172     2  
+35      -2.013995853     2  
+36      -2.010465443     2  
+37      -2.010311037     2  
+38      -2.008021939     2  
+39      -2.007919431     2  
+40      -2.131227494     1  
+41      -2.121344348     1  
+42      -2.057609585     1  
+43      -2.054296890     1  
+44      -2.032188945     1  
+45      -2.030708335     1  
+46      -2.020533572     1  
+47      -2.019741706     1  
+48      -2.014242166     1  
+49      -2.013764134     1  
+50      -2.010465440     1  
+51      -2.010148502     1  
+52      -2.008021938     1  
+53      -2.007788145     1  
+54      -2.131223196     0  
+55      -2.057608436     0  
+56      -2.032188490     0  
+57      -2.020533350     0  
+58      -2.014242042     0  
+59      -2.010465366     0  
+60      -2.008021892     0  
+Would you like a plot of Zeeman splitting with B field? (Y/N) 
+>> y
+Give an index vector of the levels for which the
+zeeman patterns should be plotted 
+>> [10,31]
+Energies and the J-value printed in the plot ? (Y/N) 
+>> y
+More plots ? (Y/N) 
+>> y
+Give an index vector of the levels for which the
+zeeman patterns should be plotted 
+>> [11,33]
+Energies and the J-value printed in the plot ? (Y/N) 
+>> y
+More plots ? (Y/N) 
+>> n
+Finished HeI_1snf
+ 
+Would you like to compute the transition rates? (Y/N)  
+>> n
+ 
+MITHIT finished

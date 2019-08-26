@@ -1,0 +1,45 @@
+Session log for plotting the Zeeman splitting of fine structure
+of 1s24d of ^6Li.
+
+>> mithit
+Name of the Initial state:   
+>> LiI_1s24d
+Name of the Final state:   
+>> LiI_1s24d
+Are the calculations based on a relativistic CI calculation? (Y/N) 
+>> y
+MIT-fs(0), HIT(1) or MIT-hfs(2):  
+>> 0
+B-field in Tesla (0) or Gauss (1):  
+>> 1
+Give the upper limit for the B-field:  
+>> 460
+Energies in a.u. (0), cm-1 (1) or MHz (2) ? 
+>> 2
+Start Computation of Energies and Mixing Coefficients
+of the Magnetic Sublevels of Initial States
+level    E_fs (a.u.)     J 
+-----------------------------------------------
+1      -7.335952653    5/2 
+2      -7.311620883    5/2 
+3      -7.335952937    3/2 
+4      -7.311620944    3/2 
+5      -7.478361568    1/2 
+6      -7.354496019    1/2 
+7      -7.318950421    1/2 
+
+Would you like a plot of Zeeman splitting with B field? (Y/N) 
+>> y
+Give an index vector of the levels for which the
+zeeman patterns should be plotted 
+>> [2,4]
+Energies and the J-value printed in the plot ? (Y/N) 
+>> y
+More plots ? (Y/N) 
+>> n
+Finished LiI_1s24d
+
+Would you like to compute the transition rates? (Y/N)  
+>> n
+ 
+MITHIT finished

@@ -1,0 +1,19 @@
+There are six tests included in the example folder, they are:
+
+Test 1, computing and plotting the Zeeman splittings of magnetic hyperfine structure substates of 
+$1s2p~^{1,3}P$ in $^3$He. 
+
+Test 2, computing and plotting the Zeeman splittings of magnetic fine structure substates of 
+$1s4f~^{1,3}F$ and $1s5f~^{1,3}F$ in $^4$He. 
+
+Test 3, computing and plotting the Zeeman splittings of magnetic fine structure substates of 
+$1s^24d~^2D$ in $^6$Li. 
+
+Test 4, computing hyperfine-induced-transitions in the He-like $^{19}F$.
+
+Test 5, computing magnetic-field-induced transitions for the Be-like $^{47}Ti$ and $^{48}Ti$ 
+
+Test 6, generation of synthetic spectra for the hyperfine $4s4d~^3D_2 - 4s4f~^3F_{2,3}$ transition array in Ga II.  
+
+Preparatory calculations using the programs of Grasp2018 have to be done in order to perform the test runs, 
+and the corresponding scripts and session log are located in each test folder.

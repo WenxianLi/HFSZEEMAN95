@@ -1,0 +1,30 @@
+# NUCLEUS
+rnucleus < rnucleus_input
+
+# GENERATE CSFs EXPANSIONS
+rcsfgenerate < rcsfgenerate_input_evenDF
+cp rcsf.out even3.c
+rcsfgenerate < rcsfgenerate_input_even
+cp rcsf.out even.c
+rcsfsplit < rcsfsplit_input_even
+
+# EVEN STATE WAVE FUNCTION
+for n in 3 4 5 6 7 8 9 10
+do
+
+cp even${n}.c rcsf.inp
+
+rangular < rangular_input
+
+rwfnestimate < rwfnestimate_input_even${n}
+
+rmcdhf < rmcdhf_input_even${n} 
+
+rsave even${n}
+done
+
+# RCI
+rci < rci_input_even10
+
+# HFSZEEMAN
+hfszeeman < hfszeeman_input_even10

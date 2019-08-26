@@ -1,0 +1,59 @@
+# RNUCLEUS
+rnucleus < rnucleus_input
+
+# EVEN STATES
+rcsfgenerate < rcsfgenerate_input_evenDF
+cp rcsf.out even1.c
+rcsfgenerate < rcsfgenerate_input_even
+cp rcsf.out even.c
+rcsfsplit < rcsfsplit_input_even
+
+for n in 1 2 3 4 5 6 7
+do
+
+cp even${n}.c rcsf.inp
+
+rangular < rangular_input
+rwfnestimate < rwfnestimate_input_even${n}
+rmcdhf < rmcdhf_input_even${n} >out_mcdhf_even${n}
+
+rsave even${n}
+done
+
+rci < rci_input_even7 
+rm mcp* rci.res 
+
+
+# ODD STATES
+rcsfgenerate < rcsfgenerate_input_oddDF
+cp rcsf.out odd1.c
+rcsfgenerate < rcsfgenerate_input_odd
+cp rcsf.out odd.c
+rcsfsplit < rcsfsplit_input_odd
+
+for n in  1 2 3 4 5 6 7
+do
+
+cp odd${n}.c rcsf.inp
+
+rangular < rangular_input
+rwfnestimate < rwfnestimate_input_odd${n}
+rmcdhf < rmcdhf_input_odd${n} >out_mcdhf_odd${n}
+
+rsave odd${n}
+
+done
+
+rci < rci_input_odd7  
+rm mcp* rci.res 
+
+# TRANSITION
+rbiotransform < rbiotransform_input
+rtransition < rtransition_input
+
+rm *.cbm *.bw *T*
+
+# HFSZEEMAN
+hfszeeman < hfszeeman_input_even7
+
+hfszeeman < hfszeeman_input_odd7
