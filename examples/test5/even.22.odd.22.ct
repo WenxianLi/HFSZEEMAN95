@@ -7,7 +7,7 @@
  =================================
 
     Upper         Lower 
-File Lev J  P File Lev J  P    E (Kays)        A (s-1)        gf          S             T 
+File Lev J  P File Lev J  P    E (Kays)        A (s-1)        gf          S             M 
  f2  1    1 -  f1  1    0 +    304563.28 C  1.54422D+07  7.48742D-04  8.09339D-04 -2.84489D-02
                                          B  1.43200D+07  6.94334D-04  7.50527D-04 -2.73958D-02
  f2  2    1 -  f1  1    0 +    590038.46 C  1.34176D+10  1.73337D-01  9.67136D-02 -3.10988D-01
@@ -18,5 +18,5 @@ File Lev J  P File Lev J  P    E (Kays)        A (s-1)        gf          S     
  =================================
 
     Upper         Lower 
-File Lev J  P File Lev J  P    E (Kays)        A (s-1)        gf          S             T
+File Lev J  P File Lev J  P    E (Kays)        A (s-1)        gf          S             M
  f2  1    2 -  f1  1    0 +    347220.14 M  2.43748D+00  1.51551D-10  1.61964D+00 -1.27265D+00
