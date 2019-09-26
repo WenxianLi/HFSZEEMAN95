@@ -1,5 +1,0 @@
-1.Copy this folder (rtransition_phase) to grasp directory: ${GRASP}/src/appl/
-2.Change to the ${GRASP}/src/appl/rtransition_phase directory and modify the Makefile to your grasp directory
-3.issue the make command
-4.If the compilation and linking is successful the executable (rtransition_phase) will
-automatically be transfered to the ${GRASP}/bin directory
