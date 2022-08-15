@@ -73,6 +73,14 @@ end
 fclose(fp);
 %end read transition data
 
+%transition type
+if Parity_f==Parity_i
+  ptype=1;
+else
+  ptype=0;
+end
+%end transition type
+
 %calculate and print the magnetic-field(MIT) or hyperfine(HIT) induced transition rates
 %Define output file name
 if ITtype==0
